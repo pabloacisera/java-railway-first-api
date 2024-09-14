@@ -1,0 +1,16 @@
+{
+  "build": {
+    "dockerfilePath": "./Dockerfile",
+    "buildContext": "."
+  },
+  "run": {
+    "startCommand": "java -jar app.jar",
+    "port": 8080
+  },
+  "envs": {
+    "SPRING_DATASOURCE_URL": "jdbc:postgresql://db:5432/javadb",
+    "SPRING_DATASOURCE_USERNAME": "admin",
+    "SPRING_DATASOURCE_PASSWORD": "kayascodelario",
+    "PORT": "8080"
+  }
+}
